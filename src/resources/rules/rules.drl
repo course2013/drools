@@ -1,0 +1,11 @@
+import com.scala.Applicant
+
+
+rule "isEligible"
+when
+    $a : Applicant(cscore >=700)
+then
+    $a.test()
+end
+
+rule
